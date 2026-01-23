@@ -64,8 +64,8 @@ legend(leg, 'Location', 'best');
 ylim([0, max(M(:))*1.1]);
 xlim([fn(1), fn(end)]);
 
-n  = 1;              % Np/Ns
-Ro = 100.0;             % 输出直流等效负载(Ohm)，示例
+n  = 10;              % Np/Ns
+Ro = 100000;             % 输出直流等效负载(Ohm)，示例
 Rac_from_Ro = (8*n^2/pi^2) * Ro;   % 常见全波整流折算
 Qe_from_Ro  = Zr / Rac_from_Ro;
 fprintf('From Ro=%.3f ohm, n=%.2f -> Rac=%.3f ohm, Qe=%.4f\n', ...
